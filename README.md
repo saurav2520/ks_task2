@@ -19,33 +19,6 @@ This setup is perfect for portfolios, landing pages, or any project where you wa
 * **CSS Framework:** [Bootstrap 5](https://getbootstrap.com/)
 * **CI/CD:** [GitHub Actions](https://github.com/features/actions)
 
-## 📂 Folder Structure
-
-The project uses a standard source (`src`) and distribution (`dist`) structure. You'll work exclusively in the `src` folder, and Gulp will automatically compile the final, optimized site into the `dist` folder.
-
-.
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # GitHub Action for automated deployment
-├── dist/                   # Compiled output (automatically generated)
-├── src/                    # All of your source files
-│   ├── assets/
-│   │   └── css/style.css
-│   └── templates/
-│       ├── layouts/
-│       │   └── layout.njk
-│       ├── pages/
-│       │   ├── index.njk
-│       │   ├── about.njk
-│       │   └── contact.njk
-│       └── partials/
-│           ├── navbar.njk
-│           └── footer.njk
-├── .gitignore
-├── gulpfile.js             # Gulp task definitions
-└── package.json
-
-
 ## ⚙️ Getting Started
 
 Follow these steps to get the project running on your local machine for development and testing.
