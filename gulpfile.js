@@ -3,10 +3,10 @@ const nunjucksRender = require('gulp-nunjucks-render');
 const browserSync = require('browser-sync').create();
 
 function nunjucksTask() {
-  return gulp.src('src/templates/pages/**/*.njk')
+  // Add the 'base' option to the src call here
+  return gulp.src('src/templates/pages/**/*.njk', { base: 'src/templates/pages' })
     .pipe(nunjucksRender({
-      // THIS IS THE CRUCIAL LINE THAT FIXES THE ERROR
-      path: ['src/templates'] 
+      path: ['src/templates']
     }))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
